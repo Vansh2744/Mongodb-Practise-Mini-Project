@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <form action="/create" method="POST">
+      <div>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Enter Username" />
+      </div>
+      <div>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Enter Your Email" />
+      </div>
+      <div>
+        <input type="text" name="age" id="age" placeholder="Enter Age" />
+      </div>
+      <div>
+        <input
+          type="text"
+          name="imageUrl"
+          id="imageUrl"
+          placeholder="Enter Image Url" />
+      </div>
+      <button type="submit">create</button>
+    </form>
+    <h3><a href="/read">Go to users</a></h3>
+  </body>
+</html>

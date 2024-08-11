@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <h1>All Created Users</h1>
+    <h2><a href="/">Go back</a></h2>
+    <div class="container">
+      <% user.forEach((data)=>{ %>
+
+      <div class="userContainer">
+        <div class="image">
+          <img src="<%= data.imageUrl %>" alt="" height="200px" width="200px"/>
+        </div>
+        <div>Name: <span><%= data.username %></span></div>
+        <div>Email: <span><%= data.email %></span></div>
+        <div>Age: <span><%= data.age %></span></div>
+
+        <button class="edit"><a href="/edit?id=<%=data._id%>">Edit</a></button>
+        <button class="delete"><a href="/delete?id=<%=data._id%>">Delete</a></button>
+      </div>
+      <% }) %>
+    </div>
+  </body>
+</html>
